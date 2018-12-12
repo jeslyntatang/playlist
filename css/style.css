@@ -1,12 +1,13 @@
 h1 {
     text-align: center;
+    font-family: 'Work Sans', sans-serif;
 }
 
 #cart {
     display: flex;
     justify-content: center;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    border-top: 5px solid #E6C2F2;
+    border-bottom:5px solid #90C3D4;
 }
 
 .column {
@@ -24,8 +25,9 @@ h1 {
 #songs p {
     font-size: 18px;
     height: 100px;
-    font-weight: bold;
+    color:black;
     margin: 20px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 #artists p {
@@ -63,4 +65,32 @@ input {
 button {
     font-size: 14px;
     padding: 5px 10px;
+    width:120px;
+    border:1px solid transparent;
+    background-color:#90C3D4;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color:white;
+}
+
+#images {
+    background-color:#90C3D4;
+}
+
+#songs {
+    background-color:#E6C2F2;
+}
+
+#artists {
+    background-color:#90C3D4;
+}
+
+#lengths {
+    background-color:#E6C2F2;
+}
+
+#links {
+    background-color:#90C3D4;
 }

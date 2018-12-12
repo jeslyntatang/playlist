@@ -2,14 +2,50 @@
 
 // BELOW Update the songs to your favorites songs. There should be at least 4.
 var songs = [
-    "24 Karat Magic",
-    "Nice For What",
-    "Universe"
+    "Ivy",
+    "Bloom",
+    "Pynk",
+    "She Will Be Loved",
+    "Homemade Dynamite",
+    "LA Devotee"
 ];
 // BELOW Add 4 More arrays to store images_links, atists, song lengths, and links for each song
 // Make sure they match the same order as your array above
+var images = [
+    "https://upload.wikimedia.org/wikipedia/en/thumb/a/a0/Blonde_-_Frank_Ocean.jpeg/220px-Blonde_-_Frank_Ocean.jpeg",
+    "https://upload.wikimedia.org/wikipedia/en/thumb/1/1e/Troye_Sivan_-_Bloom_%28Official_Album_Cover%29.png/220px-Troye_Sivan_-_Bloom_%28Official_Album_Cover%29.png",
+    "https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/DirtyComputer.png/220px-DirtyComputer.png",
+    "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Maroon_5_-_Songs_About_Jane.png/220px-Maroon_5_-_Songs_About_Jane.png",
+    "https://vignette.wikia.nocookie.net/thelorde/images/8/81/Hdr.jpg/revision/latest?cb=20170914152855",
+    "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Death_of_a_Bachelor.jpg/220px-Death_of_a_Bachelor.jpg"
+    ]
 
+var artists = [
+    "Frank Ocean",
+    "Troye Sivan",
+    "Janelle Monáe",
+    "Maroon 5",
+    "Lorde",
+    "Panic! at the Disco"
+    ]
+    
+var lengths = [
+    "4:10",
+    "3:43",
+    "4:00",
+    "4:18",
+    "3:09",
+    "3:17"
+    ]
 
+var vids = [
+    "https://www.youtube.com/watch?v=x6QJPJO2w40",
+    "https://www.youtube.com/watch?v=S8gYErP4ZDQ",
+    "https://www.youtube.com/watch?v=iGkDE2Gakow",
+    "https://www.youtube.com/watch?v=MzrVMkcVD4M",
+    "https://www.youtube.com/watch?v=OQsJ_FCCIMQ",
+    "https://www.youtube.com/watch?v=7dQ1xiy-4hY"
+    ]
 
 
 
