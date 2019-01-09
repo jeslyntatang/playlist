@@ -6,7 +6,7 @@ h1 {
 #cart {
     display: flex;
     justify-content: center;
-    border-top: 5px solid #E6C2F2;
+    border-top: 5px solid #90C3D4;
     border-bottom:5px solid #90C3D4;
 }
 
@@ -34,6 +34,8 @@ h1 {
     font-size: 18px;
     height: 100px;
     margin: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color:white;
 }
 
 #lengths p {
@@ -41,15 +43,18 @@ h1 {
     height: 100px;
     margin: 20px;
     text-align: right;
+    font-family: 'Work Sans', sans-serif;
 }
 
 #links a {
     display: block;
     font-size: 18px;
     height: 100px;
-    font-weight: bold;
     margin: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color:#E6C2F2;
 }
+
 
 #form {
     width: 75%;
@@ -62,13 +67,19 @@ input {
     font-size: 14px;
 }
 
+#buttons {
+    text-align:center;
+}
+
 button {
     font-size: 14px;
     padding: 5px 10px;
     width:120px;
     border:1px solid transparent;
     background-color:#90C3D4;
+    margin-top:5px;
 }
+
 
 body {
     font-family: 'Lato', sans-serif;
@@ -76,7 +87,7 @@ body {
 }
 
 #images {
-    background-color:#90C3D4;
+    background-color:#000;
 }
 
 #songs {
@@ -84,7 +95,7 @@ body {
 }
 
 #artists {
-    background-color:#90C3D4;
+    background-color:#000;
 }
 
 #lengths {
@@ -92,5 +103,5 @@ body {
 }
 
 #links {
-    background-color:#90C3D4;
+    background-color:#000;
 }

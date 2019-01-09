@@ -23,7 +23,7 @@ var images = [
 var artists = [
     "Frank Ocean",
     "Troye Sivan",
-    "Janelle Monáe",
+    "Janelle Monae",
     "Maroon 5",
     "Lorde",
     "Panic! at the Disco"
@@ -40,7 +40,7 @@ var lengths = [
 
 var vids = [
     "https://www.youtube.com/watch?v=x6QJPJO2w40",
-    "https://www.youtube.com/watch?v=S8gYErP4ZDQ",
+    "https://https://www.youtube.com/watch?v=S8gYErP4ZDQ",
     "https://www.youtube.com/watch?v=iGkDE2Gakow",
     "https://www.youtube.com/watch?v=MzrVMkcVD4M",
     "https://www.youtube.com/watch?v=OQsJ_FCCIMQ",
@@ -55,13 +55,27 @@ function displaySongInfo(){
         $("#songs").append("<p>" + song + "</p>"); 
     });
     // BELOW Use forEach Loop to display the data from each of your array's in the correct div
-
+    images.forEach(function(pic) {
+        $("#images").append(`<img src = "${pic}">`);
+    });
+    artists.forEach(function(artist) {
+        $("#artists").append("<p>" + artist + "</p>");
+    });
+    lengths.forEach(function(minutes) {
+        $("#lengths").append("<p>" + minutes + "</p>");
+    });
+    vids.forEach(function(link) {
+        $("#links").append(`<a href = ${link} > Video</a>`);
+    });
 }
 
 function emptySongInfo(){
     $("#songs").empty();
     // Use jQuery to empty all of the remaining divs
-
+    $("#artists").empty();
+    $("#lengths").empty();
+    $("#images").empty();
+    $("#links").empty();
 
 }
 
@@ -70,14 +84,28 @@ function addSongInfo(){
     var songName = $("#song").val();
     songs.push(songName);
     // BELOW write the code to add new items to each of the other arrays
-
-
+    var artistName = $("#artist").val();
+    artists.push(artistName);
+    var lengthName = $("#length").val();
+    lengths.push(lengthName);
+    var imageName = $("#image").val();
+    images.push(imageName);
+    var linkName = $("#link").val();
+    vids.push(linkName);
 }
 
 $("#add").click(function() {
     emptySongInfo();
     addSongInfo();
     displaySongInfo();
+});
+
+function deleteSOng() {
+    //delete song function
+}
+
+$("#delete").click(function() {
+    deleteSong();
 });
 
 displaySongInfo();
