@@ -4,7 +4,7 @@
 var songs = [
     "Ivy",
     "Bloom",
-    "Pynk",
+    "Americans",
     "She Will Be Loved",
     "Homemade Dynamite",
     "LA Devotee"
@@ -32,7 +32,7 @@ var artists = [
 var lengths = [
     "4:10",
     "3:43",
-    "4:00",
+    "4:06",
     "4:18",
     "3:09",
     "3:17"
@@ -41,12 +41,11 @@ var lengths = [
 var vids = [
     "https://www.youtube.com/watch?v=x6QJPJO2w40",
     "https://https://www.youtube.com/watch?v=S8gYErP4ZDQ",
-    "https://www.youtube.com/watch?v=iGkDE2Gakow",
+    "https://www.youtube.com/watch?v=POZNheF-KdY",
     "https://www.youtube.com/watch?v=MzrVMkcVD4M",
     "https://www.youtube.com/watch?v=OQsJ_FCCIMQ",
     "https://www.youtube.com/watch?v=7dQ1xiy-4hY"
     ]
-
 
 
 
@@ -67,7 +66,16 @@ function displaySongInfo(){
     vids.forEach(function(link) {
         $("#links").append(`<a href = ${link} > Video</a>`);
     });
+    for (var i = 0; i<songs.length;i++) {
+        $("#deletecol").append('<button class="testbutton" id="'+i+'">Delete Song</button>');
+    }
 }
+
+$('.testbutton').click(function()  {
+    alert("hsjfj");
+    console.log("hksf");
+});
+
 
 function emptySongInfo(){
     $("#songs").empty();
@@ -76,7 +84,7 @@ function emptySongInfo(){
     $("#lengths").empty();
     $("#images").empty();
     $("#links").empty();
-
+    $("#deletecol").empty();
 }
 
 
@@ -100,12 +108,8 @@ $("#add").click(function() {
     displaySongInfo();
 });
 
-function deleteSOng() {
-    //delete song function
-}
-
 $("#delete").click(function() {
-    deleteSong();
+    emptySongInfo();
 });
 
 displaySongInfo();

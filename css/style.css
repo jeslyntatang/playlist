@@ -88,20 +88,34 @@ body {
 
 #images {
     background-color:#000;
+    text-align:center;
 }
 
 #songs {
     background-color:#E6C2F2;
+    text-align:center;
 }
 
 #artists {
     background-color:#000;
+    text-align:center;
 }
 
 #lengths {
     background-color:#E6C2F2;
+    text-align:center;
 }
 
 #links {
     background-color:#000;
+    text-align:center;
+}
+
+#deletecol {
+    background-color:#E6C2F2;
+    text-align:center;
+}
+
+.testbutton {
+    margin-bottom:85px;
 }
