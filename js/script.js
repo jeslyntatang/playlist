@@ -66,16 +66,24 @@ function displaySongInfo(){
     vids.forEach(function(link) {
         $("#links").append(`<a href = ${link} > Video</a>`);
     });
-    for (var i = 0; i<songs.length;i++) {
-        $("#deletecol").append('<button class="testbutton" id="'+i+'">Delete Song</button>');
-    }
 }
 
-$('.testbutton').click(function()  {
-    alert("hsjfj");
-    console.log("hksf");
-});
-
+function displayDelete() {
+    for (let i=0; i<songs.length; i++) {
+        var deleteButton = $("<button>" + "Delete" + "</button>");
+        $("#deletecol").append(deleteButton);
+        deleteButton.click(function() {
+            emptySongInfo();
+            songs.splice(i,1);
+            images.splice(i,1);
+            artists.splice(i,1);
+            lengths.splice(i,1);
+            vids.splice(i,1);
+            displaySongInfo();
+            displayDelete();
+        });
+    }
+}
 
 function emptySongInfo(){
     $("#songs").empty();
@@ -100,6 +108,7 @@ function addSongInfo(){
     images.push(imageName);
     var linkName = $("#link").val();
     vids.push(linkName);
+    displayDelete();
 }
 
 $("#add").click(function() {
@@ -113,3 +122,4 @@ $("#delete").click(function() {
 });
 
 displaySongInfo();
+displayDelete();
